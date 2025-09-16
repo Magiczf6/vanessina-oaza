@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Za moju Vanessu ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b10;--card:#141419;--ink:#f5f6fa;--muted:#c9c9d1;--accent:#ff4d6d;--accent-2:#b5179e;--ring:rgba(255,77,109,.35);--shadow:0 10px 30px rgba(0,0,0,.35)}
+    *{box-sizing:border-box}html,body{margin:0;height:100%;background:radial-gradient(1200px 800px at 80% -10%,rgba(255,77,109,.12),transparent),radial-gradient(1000px 600px at -10% 110%,rgba(181,23,158,.12),transparent),var(--bg);color:var(--ink);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    .container{max-width:1100px;margin:0 auto;padding:24px}.grid{display:grid;gap:22px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}@media (max-width:860px){.grid-2{grid-template-columns:1fr}}
+    header{border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg,rgba(255,77,109,.08),transparent)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:28px}@media (max-width:960px){.hero{grid-template-columns:1fr}}
+    .hero h1{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(38px,6vw,66px);line-height:1.05;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px;font-size:1.05rem}
+    .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{border:0;border-radius:18px;padding:12px 18px;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:var(--shadow)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:white;text-decoration:none}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,.18);color:white;text-decoration:none}
+    .polaroid{border-radius:22px;overflow:hidden;background:var(--card);box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center}
+    .polaroid img{width:100%;height:100%;object-fit:cover;display:block}
+    .section{padding:48px 0}.section h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,40px);margin:0 0 8px}.section .sub{color:var(--muted);margin:0 0 24px}
+    .note{background:linear-gradient(180deg,rgba(20,20,25,.7),rgba(20,20,25,.9));border:1px solid rgba(255,255,255,.06);border-radius:24px;padding:24px;backdrop-filter:blur(8px);box-shadow:var(--shadow)}
+    .gallery{columns:1;column-gap:16px}@media (min-width:620px){.gallery{columns:2}}@media (min-width:980px){.gallery{columns:3}}
+    .g-card{break-inside:avoid;border-radius:18px;overflow:hidden;margin:0 0 16px;background:var(--card);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);cursor:pointer}
+    .g-card img{width:100%;display:block}
+    .lightbox{position:fixed;inset:0;background:rgba(5,5,10,.85);display:none;align-items:center;justify-content:center;padding:24px}.lightbox.active{display:flex}
+    .lightbox img{max-width:min(1200px,92vw);max-height:82vh;border-radius:18px;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+    .lightbox .close{position:fixed;top:18px;right:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px);border-radius:12px;padding:8px 12px;cursor:pointer;color:white}
+    footer{padding:24px 0 48px;color:#c9c9d1;text-align:center}
+    .upload-panel{margin:16px 0 26px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  </style>
+</head>
+<body>
+  <header class="section">
+    <div class="container hero">
+      <div>
+        <h1>Za moju Vanessu</h1>
+        <p>Ovo je naša mala oaza na internetu – mjesto gdje čuvam sve što volim kod tebe i nas. 💫</p>
+        <div class="cta">
+          <a href="#love-note" class="btn btn-primary">Pročitaj pismo</a>
+          <a href="#galerija" class="btn btn-outline">Pogledaj uspomene</a>
+        </div>
+      </div>
+      <div class="polaroid" aria-label="Nas dvoje">
+        <img src="slike/1.svg" alt="Nas dvoje" />
+      </div>
+    </div>
+  </header>
+
+  <section id="love-note" class="section">
+    <div class="container">
+      <h2>Moje pismo tebi</h2>
+      <p class="sub">Malo podsjećanje koliko te volim</p>
+      <div class="note">
+        <p>Vanessa, ti si moje svjetlo, moj oslonac i moj osmijeh u svakom danu. Svaka uspomena s tobom je dragulj koji čuvam u srcu. 💖</p>
+        <p>Želim da znaš da gdje god bili i što god radili, uvijek ćeš biti moja posebna priča, moja inspiracija i moja ljubav.</p>
+        <div style="color:#c9c9d1">Zauvijek tvoj</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerija" class="section">
+    <div class="container">
+      <h2>Naše uspomene</h2>
+      <p class="sub">Galerija naših trenutaka</p>
+
+      <div class="upload-panel">
+        <label for="filePicker" class="btn btn-primary" style="cursor:pointer">Učitaj svoje slike</label>
+        <input id="filePicker" type="file" accept="image/*" multiple style="display:none" />
+        <span class="sub" style="margin:0">Odaberi fotke s uređaja – pojavit će se odmah i kao hero. (Prikaz je lokalni.)</span>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <figure class="g-card"><img src="slike/1.svg" alt="slika 1"></figure>
+        <figure class="g-card"><img src="slike/2.svg" alt="slika 2"></figure>
+        <figure class="g-card"><img src="slike/3.svg" alt="slika 3"></figure>
+        <figure class="g-card"><img src="slike/4.svg" alt="slika 4"></figure>
+        <figure class="g-card"><img src="slike/5.svg" alt="slika 5"></figure>
+        <figure class="g-card"><img src="slike/6.svg" alt="slika 6"></figure>
+        <figure class="g-card"><img src="slike/7.svg" alt="slika 7"></figure>
+        <figure class="g-card"><img src="slike/8.svg" alt="slika 8"></figure>
+        <figure class="g-card"><img src="slike/9.svg" alt="slika 9"></figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Za Vanessu – S ljubavlju 💕</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="document.getElementById('lightbox').classList.remove('active')">Zatvori ✖</span>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script>
+    function wireLightbox(){
+      document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+          const lb = document.getElementById('lightbox');
+          const lbImg = document.getElementById('lightbox-img');
+          lbImg.src = img.src;
+          lb.classList.add('active');
+        });
+      });
+    }
+    wireLightbox();
+
+    const picker = document.getElementById('filePicker');
+    const gallery = document.getElementById('gallery');
+    const heroImg = document.querySelector('.polaroid img');
+
+    function addToGallery(url, name){
+      const fig = document.createElement('figure');
+      fig.className = 'g-card';
+      const im = document.createElement('img');
+      im.loading = 'lazy';
+      im.alt = name || 'fotka';
+      im.src = url;
+      fig.appendChild(im);
+      gallery.prepend(fig);
+      im.addEventListener('click', () => {
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        lbImg.src = im.src;
+        lb.classList.add('active');
+      });
+    }
+
+    function handleFiles(files){
+      if(!files || !files.length) return;
+      gallery.innerHTML = '';
+      const arr = Array.from(files);
+      arr.sort((a,b)=> (a.name||'').localeCompare(b.name||''));
+      arr.forEach((file, idx)=>{
+        const url = URL.createObjectURL(file);
+        addToGallery(url, file.name);
+        if(idx===0 && heroImg){ heroImg.src = url; }
+      });
+    }
+
+    picker.addEventListener('change', (e)=> handleFiles(e.target.files));
+    gallery.addEventListener('dragover', (e)=>{ e.preventDefault(); gallery.style.outline='2px dashed rgba(255,255,255,.25)'; });
+    gallery.addEventListener('dragleave', ()=>{ gallery.style.outline='none'; });
+    gallery.addEventListener('drop', (e)=>{ e.preventDefault(); gallery.style.outline='none'; handleFiles(e.dataTransfer.files); });
+  </script>
+</body>
+</html>
